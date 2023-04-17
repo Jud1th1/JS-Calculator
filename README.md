@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
-- Live Site URL: 
+- Solution URL: https://github.com/Jud1th1/JS-Calculator
+- Live Site URL: https://vanilla-javascript-calculator-judith.netlify.app/
 
 ## My process
 -	I followed along with the Web Dev Simplified tutorial to layout out my html and css. 
