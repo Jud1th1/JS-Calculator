@@ -1,0 +1,96 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+  }
+
+  .header{
+    text-align: center;
+    padding-top: 3em;
+  }
+  
+  .calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  }
+  
+  .calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.7);
+  }
+
+.calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    }
+              
+.span-two {
+    grid-column: span 2;
+    }
+              
+.output {
+    grid-column: 1 / -1;
+    background-color: #463f3a;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.7);
+    }
+              
+.output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+    }
+              
+.output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+    }
+
+/*Adding more color to buttons*/
+.calculator-grid > .top-row{
+  background-color: #d4a373;
+  color: #D8F3DC;
+}
+
+.calculator-grid > .top-row:hover{
+  background-color: #d4b391;
+  color: black;
+}
+
+.calculator-grid > .opp_row{
+    background-color: #c9ada7;
+    color: #D8F3DC;
+}
+
+.calculator-grid > .opp_row:hover{
+  background-color: #c5b1ac;
+  color: black;
+}
+
+.calculator-grid > .equal-btn{
+    background-color: #ccd5ae;
+}
+
+.calculator-grid > .equal-btn:hover{
+  background-color: #e9edc9;
+  color: black;
+}
